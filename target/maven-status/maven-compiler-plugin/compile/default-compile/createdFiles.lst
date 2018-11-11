@@ -1,5 +1,6 @@
 PresentationLayer\changeOrder.class
 PresentationLayer\UnknownCommand.class
+PresentationLayer\UpdateOrder.class
 DBAccess\DataMapper.class
 DBAccess\Connector.class
 FunctionLayer\Materials.class

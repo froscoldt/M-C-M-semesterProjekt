@@ -20,9 +20,9 @@ public class LogicFacade {
         return TotalMaterials;
     }
 
-    public static Materials ChangeOrder(int OrderID, Materials materials) {
+    public static Materials ChangeOrder(int OrderID, Materials materials) throws LoginSampleException {
         materials = DataMapper.ChangeOrder(materials, OrderID);
-        
-        return materials;
+        throw new LoginSampleException("materials length: " + materials.getLength());
+        //return materials;
     }
 }

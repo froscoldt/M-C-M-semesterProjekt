@@ -20,21 +20,32 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="text-center">
-                    <form id="1111" action="FrontController" method="POST" >
-                        <input type="hidden" name="command" value="Calculate"> 
-                        <div class="container"> 
+                    <div class="container"> 
+                        <form id="1111" action="FrontController" method="POST" >
+                            <input type="hidden" name="command" value="UpdateOrder"> 
                             <label for='height'> <b>Height </b>
                             </label>
-                            <input type="text" placeholder="Enter Height" name="height" required="">
-
-                            <button class="btn btn-primary" onclick="Calculate" > Submit </button>
-                        </div>
-                    </form>
+                            <input type="text" placeholder="Enter Height" name="height" required="" >
+                            <label for='width'> <b>Width </b>
+                            </label>
+                            <input type="text" placeholder="Enter Width" name="width" required="">
+                            <label for='length'> <b>Length </b>
+                            </label>
+                            <input type="text" placeholder="Enter Length" name="length" required="">
+                            <label for='polls'> <b>Polls </b>
+                            </label>
+                            <input type="text" placeholder="Enter Polls" name="polls" required="">
+                            <label for='spears'> <b>Spears </b>
+                            </label>
+                            <input type="text" placeholder="Enter Spears" name="spears" required="">
+                            <button class="btn btn-primary" onclick="update()" > Submit </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
         <script type="text/javascript">
-            Function Calculate()
+            Function update()
             {
                 document.getElementById('1111').submit();
             }
