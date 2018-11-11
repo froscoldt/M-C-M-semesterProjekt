@@ -1,3 +1,4 @@
+PresentationLayer\changeOrder.class
 PresentationLayer\UnknownCommand.class
 DBAccess\DataMapper.class
 DBAccess\Connector.class

@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 
     private static void initCommands() {
         commands = new HashMap<>();
-        //commands.put("login", new Login());
+        commands.put("ChangeOrder", new changeOrder());
         //add methods here for the controller
     }
 
