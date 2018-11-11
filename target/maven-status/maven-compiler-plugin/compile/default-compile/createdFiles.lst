@@ -1,10 +1,12 @@
+PresentationLayer\calculateOrder.class
 PresentationLayer\changeOrder.class
 PresentationLayer\UnknownCommand.class
 PresentationLayer\UpdateOrder.class
 DBAccess\DataMapper.class
 DBAccess\Connector.class
-FunctionLayer\Materials.class
 PresentationLayer\FrontController.class
 FunctionLayer\LogicFacade.class
 PresentationLayer\Command.class
+FunctionLayer\CarportDimensioner.class
+PresentationLayer\Materials.class
 FunctionLayer\LoginSampleException.class

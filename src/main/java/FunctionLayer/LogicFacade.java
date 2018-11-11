@@ -5,6 +5,7 @@
  */
 package FunctionLayer;
 import DBAccess.DataMapper;
+import PresentationLayer.Materials;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,15 +15,20 @@ import java.util.List;
  */
 public class LogicFacade {
 
-    public static List<Materials> GetMaterials() {
-        List<Materials> TotalMaterials = new ArrayList();
+    public static List<CarportDimensioner> GetMaterials() {
+        List<CarportDimensioner> TotalMaterials = new ArrayList();
         
         return TotalMaterials;
     }
 
-    public static Materials ChangeOrder(int OrderID, Materials materials) throws LoginSampleException {
-        materials = DataMapper.ChangeOrder(materials, OrderID);
-        throw new LoginSampleException("materials length: " + materials.getLength());
-        //return materials;
+    public static CarportDimensioner ChangeOrder(int OrderID, CarportDimensioner dimension) throws LoginSampleException {
+        dimension = DataMapper.ChangeOrder(dimension, OrderID);
+        throw new LoginSampleException("materials length: " + dimension.getLength());
+    }
+
+    public static List<Materials> CalculateOrder(CarportDimensioner dimension) throws LoginSampleException {
+        List<Materials> materials = DataMapper.CalculateOrder(dimension);
+        
+        return materials;
     }
 }

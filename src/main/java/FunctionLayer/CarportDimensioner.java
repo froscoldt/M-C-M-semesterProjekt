@@ -9,14 +9,14 @@ package FunctionLayer;
  *
  * @author Christian
  */
-public class Materials {
+public class CarportDimensioner {
     private int heigth;
     private int length;
     private int width;
     private int polls;
     private int spears;
 
-    public Materials(int heigth, int length, int width, int polls, int spears) {
+    public CarportDimensioner(int heigth, int length, int width, int polls, int spears) {
         this.heigth = heigth;
         this.length = length;
         this.width = width;
