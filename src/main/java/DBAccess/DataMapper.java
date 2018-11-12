@@ -38,11 +38,11 @@ public class DataMapper {
         return dimension;
     }
 
-    public static List<Materials> CalculateOrder(CarportDimensioner dimension) throws LoginSampleException {
+    public static List<Materials> CalculateOrder(CarportDimensioner dimension, int indexID) throws LoginSampleException {
         List<Materials> materials = new ArrayList();
         try {
             Connection l_cCon = Connector.connection();
-            String l_sSQL = "";
+            String l_sSQL = "SELECT * FROM `Materiale` WHERE id = " + indexID;
         } catch (SQLException | ClassNotFoundException ex) {
             throw new LoginSampleException(ex.getMessage());
         }

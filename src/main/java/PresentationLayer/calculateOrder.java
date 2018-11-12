@@ -31,7 +31,8 @@ public class calculateOrder extends Command {
         int polls = Integer.valueOf(request.getParameter("polls")) == null ? 0 : Integer.valueOf(request.getParameter("polls"));
         int spears = Integer.valueOf(request.getParameter("rafter")) == null ? 0 : Integer.valueOf(request.getParameter("rafter"));
         CarportDimensioner dimension = new CarportDimensioner(height, length, width, polls, spears);
-        OrderMaterials = LogicFacade.CalculateOrder(dimension);
+        int indexID = 1; //tilføj måde til at sige hvilken order vi taler om
+        OrderMaterials = LogicFacade.CalculateOrder(dimension, indexID);
         session.setAttribute("ordermaterials", OrderMaterials);
         return "customerconfirmation";
     }

@@ -29,8 +29,8 @@ public class LogicFacade {
         throw new LoginSampleException("materials length: " + dimension.getLength());
     }
 
-    public static List<Materials> CalculateOrder(CarportDimensioner dimension) throws LoginSampleException {
-        List<Materials> materials = DataMapper.CalculateOrder(dimension);
+    public static List<Materials> CalculateOrder(CarportDimensioner dimension, int indexID) throws LoginSampleException {
+        List<Materials> materials = DataMapper.CalculateOrder(dimension, indexID);
 
         return materials;
     }
