@@ -21,6 +21,7 @@ public class HeightandLengths extends Command {
     @Override
     String execute(HttpServletRequest request, HttpServletResponse response) throws LoginSampleException {
         HttpSession session = request.getSession();
+        //test commit
         Map<Integer, Integer> HM = LogicFacade.GetWidthAndLength();
         session.setAttribute("lengthAndHeight", HM);
         return "madsjsp";
