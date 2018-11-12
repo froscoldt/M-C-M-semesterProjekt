@@ -21,6 +21,7 @@ import javax.servlet.http.HttpSession;
 public class calculateOrder extends Command {
 
     @Override
+            
     String execute(HttpServletRequest request, HttpServletResponse response) throws LoginSampleException {
         HttpSession session = request.getSession();
         List<Materials> OrderMaterials = new ArrayList();
@@ -28,7 +29,7 @@ public class calculateOrder extends Command {
         int width = Integer.valueOf(request.getParameter("width")) == null ? 0 : Integer.valueOf(request.getParameter("width"));
         int length = Integer.valueOf(request.getParameter("length")) == null ? 0 : Integer.valueOf(request.getParameter("length"));
         int polls = Integer.valueOf(request.getParameter("polls")) == null ? 0 : Integer.valueOf(request.getParameter("polls"));
-        int spears = Integer.valueOf(request.getParameter("spears")) == null ? 0 : Integer.valueOf(request.getParameter("spears"));
+        int spears = Integer.valueOf(request.getParameter("rafter")) == null ? 0 : Integer.valueOf(request.getParameter("rafter"));
         CarportDimensioner dimension = new CarportDimensioner(height, length, width, polls, spears);
         OrderMaterials = LogicFacade.CalculateOrder(dimension);
         session.setAttribute("ordermaterials", OrderMaterials);

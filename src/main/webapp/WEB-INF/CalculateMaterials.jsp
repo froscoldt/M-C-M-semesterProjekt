@@ -26,19 +26,19 @@
                             <input type="hidden" name="command" value="CalculateOrder"> 
                             <label for='height'> <b>Height </b>
                             </label>
-                            <input type="text" placeholder="Enter Height" name="height" required="" >
+                            <input type="number" placeholder="Enter Height" name="height" required="" >
                             <label for='width'> <b>Width </b>
                             </label>
-                            <input type="text" placeholder="Enter Width" name="width" required="">
+                            <input type="number" placeholder="Enter Width" name="width" required="">
                             <label for='length'> <b>Length </b>
                             </label>
-                            <input type="text" placeholder="Enter Length" name="length" required="">
+                            <input type="number" placeholder="Enter Length" name="length" required="">
                             <label for='polls'> <b>Polls </b>
                             </label>
-                            <input type="text" placeholder="Enter Polls" name="polls" required="">
+                            <input type="number" placeholder="Enter Polls" name="polls" required="">
                             <label for='spears'> <b>Spears </b>
                             </label>
-                            <input type="text" placeholder="Enter Spears" name="spears" required="">
+                            <input type="number" placeholder="Enter rafter" name="rafter" required="">
                             <button class="btn btn-primary" onclick="update()" > Submit </button>
                         </form>
                     </div>
