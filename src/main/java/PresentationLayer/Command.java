@@ -21,6 +21,7 @@ import javax.servlet.http.HttpServletResponse;
     private static void initCommands() {
         commands = new HashMap<>();
         commands.put("ChangeOrder", new changeOrder());
+        commands.put("CalculatePage", new CalculatePage());
         commands.put("UpdateOrder", new UpdateOrder());
         commands.put("CalculateOrder", new calculateOrder());
         //add methods here for the controller
