@@ -16,7 +16,7 @@ import java.sql.SQLException;
 public class Connector {
     private static final String URL = "jdbc:mysql://104.248.40.216:3306/fog";
     private static final String USERNAME = "MMuser";
-    private static final String PASSWORD = "2345678";
+    private static final String PASSWORD = "";
 
     private static Connection singleton;
 
