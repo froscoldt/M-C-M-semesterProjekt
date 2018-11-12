@@ -1,6 +1,7 @@
 PresentationLayer\changeOrder.class
 PresentationLayer\UnknownCommand.class
 PresentationLayer\CalculatePage.class
+PresentationLayer\HeightAndLengths.class
 FunctionLayer\CarportDimensioner.class
 FunctionLayer\LoginSampleException.class
 PresentationLayer\calculateOrder.class

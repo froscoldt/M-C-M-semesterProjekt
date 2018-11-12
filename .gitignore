@@ -1,1 +1,4 @@
 Connector.java
+/target/
+*.class
+*.class
