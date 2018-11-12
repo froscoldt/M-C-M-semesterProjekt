@@ -31,4 +31,9 @@ public class LogicFacade {
         
         return materials;
     }
+
+    public static CarportDimensioner CreateCarport(int height, int width, int length, int polls, int spears) {
+        CarportDimensioner CreateCarport = new CarportDimensioner(height, width, length, polls, spears);
+        return CreateCarport;
+    }
 }
