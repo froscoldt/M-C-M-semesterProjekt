@@ -14,14 +14,14 @@ public class CarportDimensioner {
     private int length;
     private int width;
     private int polls;
-    private int raft;
+    private int spears;
 
-    public CarportDimensioner(int heigth, int length, int width, int polls, int raft) {
+    public CarportDimensioner(int heigth, int length, int width, int polls, int spears) {
         this.heigth = heigth;
         this.length = length;
         this.width = width;
         this.polls = polls;
-        this.raft = raft;
+        this.spears = spears;
     }
 
     public int getHeigth() {
@@ -56,14 +56,12 @@ public class CarportDimensioner {
         this.polls = polls;
     }
 
-    public int getRaft() {
-        return raft;
+    public int getSpears() {
+        return spears;
     }
 
-    public void setRaft(int raft) {
-        this.raft = raft;
+    public void setSpears(int spears) {
+        this.spears = spears;
     }
-
-    
 
 }

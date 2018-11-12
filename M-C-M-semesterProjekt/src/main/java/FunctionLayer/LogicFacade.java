@@ -4,10 +4,13 @@
  * and open the template in the editor.
  */
 package FunctionLayer;
+
 import DBAccess.DataMapper;
 import PresentationLayer.Materials;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  *
@@ -17,7 +20,7 @@ public class LogicFacade {
 
     public static List<CarportDimensioner> GetMaterials() {
         List<CarportDimensioner> TotalMaterials = new ArrayList();
-        
+
         return TotalMaterials;
     }
 
@@ -28,12 +31,17 @@ public class LogicFacade {
 
     public static List<Materials> CalculateOrder(CarportDimensioner dimension) throws LoginSampleException {
         List<Materials> materials = DataMapper.CalculateOrder(dimension);
-        
+
         return materials;
     }
 
     public static CarportDimensioner CreateCarport(int height, int width, int length, int polls, int spears) {
         CarportDimensioner CreateCarport = new CarportDimensioner(height, width, length, polls, spears);
         return CreateCarport;
+    }
+
+    public static Map<Integer, Integer> GetWidthAndLength() throws LoginSampleException {
+        Map<Integer, Integer> HM = DataMapper.GetWidthAndLength();
+        return HM;
     }
 }
