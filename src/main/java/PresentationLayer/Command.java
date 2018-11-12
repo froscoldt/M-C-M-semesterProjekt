@@ -24,7 +24,6 @@ import javax.servlet.http.HttpServletResponse;
         commands.put("CalculatePage", new CalculatePage());
         commands.put("UpdateOrder", new UpdateOrder());
         commands.put("CalculateOrder", new calculateOrder());
-        commands.put("HeightAndLengths", new HeightAndLengths());
         //add methods here for the controller
     }
 
