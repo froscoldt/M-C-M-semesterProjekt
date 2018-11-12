@@ -33,7 +33,7 @@ public class calculateOrder extends Command {
         CarportDimensioner dimension = new CarportDimensioner(height, length, width, polls, spears);
         OrderMaterials = LogicFacade.CalculateOrder(dimension);
         session.setAttribute("ordermaterials", OrderMaterials);
-        return "needs to be implemented";
+        return "customerconfirmation";
     }
 
 }
